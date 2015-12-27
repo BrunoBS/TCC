@@ -48,9 +48,9 @@ public abstract class ParoquiaFactory {
 
 				Method mtd = entidade.getClass().getMethod(get(field.getName()));
 				List<Object> a = (List<Object>) mtd.invoke(entidade);
+				valor += a.size();
 				for (Object objeto : a) {
 					System.err.println(field.getName() + " - " + a.size());
-					valor += a.size();
 					valor += getTotalRegistros(objeto);
 
 				}

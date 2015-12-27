@@ -50,6 +50,7 @@ public class Paroquia implements Entidade<Paroquia> {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+
 	}
 
 	public Cidade getCidade() {
